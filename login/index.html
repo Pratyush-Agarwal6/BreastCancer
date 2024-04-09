@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growth App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image 1.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="image 1.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a id="loginButton" class="btn" href="#">Log In </a>  
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="section1" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-heading text-xxl">
+              Discover Potential Cancer Markers through descriptors' analysis
+            </h1>
+            <p class="hero-text">
+              Explore genetic matches and uncover potential cancer markers by inputting genome sequences into our advanced dataset analysis tool. Our platform harnesses cutting-edge technology to facilitate targeted cancer research and diagnostics.
+            </p>
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('section2')">
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript function to handle scrolling
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+
+    <div class="container">
+  <div class="story-container">
+      <div class="need-for-dx-container">
+          <h3 class="text-xl text-center">
+              ABOUT
+          </h3>
+          <p class="hero-text">
+              Application Programming Interfaces (APIs) have taken the world by storm and are now the de facto standard of software communication. Almost every software product nowadays consumes APIs. The business model of numerous companies around the world relies upon the consumption of their APIs. API providers, therefore, strive to increase API adoption rates by spending millions of dollars every year to improve developer experience. This is usually done by providing Software Development Kits (SDKs) and API documentation to developer consuming their API(s). Developing SDKs and writing documentation, however, are arduous, monotonous and error-prone tasks. It is a slow process and costs a lot of time and money.
+          </p>
+          <div class="img-container">
+              <img src="https://apimatic.io/img/theme/aboutUs/dxFlow.svg" alt="apimatic developer experience process" class="img-responsive"/>
+          </div>
+      </div>
+
+      <!-- Search bar -->
+      <section id="section2" class="search bg-light">
+        <h2 class="text-xl text-center">
+            Enter the parameters here in the order of:<br>
+            Radius, Texture, Perimeter, Area, Smoothness, Diagnosis
+           </h2>
+        <div id="search">
+            <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
+                <rect class="bar"/>
+                
+                <g class="magnifier">
+                    <circle class="glass"/>
+                    <line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
+                </g>
+            </svg>
+            <input type=search name=q aria-label="Search for inspiration"/>
+        </div>
+        
+        <div id="results">
+            
+        </div>
+      </section>
+
+    <!-- Video Section -->
+    <section class="video bg-light">
+      <div class="container-sm">
+        <h2 class="text-xl text-center">
+          Join the breast cancer warriors! Together, we're stronger than cancer
+        </h2>
+        <div class="video-content">
+          <a href="#">
+            <video height="500px" width="270px" autoplay><source src="video.mp4" type="video/mp4">
+            </video>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials bg-dark">
+      <div class="container">
+        <h3 class="testimonials-heading text-xl">
+          Lets hear from the medical experts and lab technicians!
+        </h3>
+        <div class="testimonials-grid">
+          <div class="card">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, consequatur.
+            </p>
+
+            <p>Katherine Smith</p>
+            <p>Capodopera</p>
+          </div>
+
+          <div class="card">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt nemo minima excepturi? Consequuntur fugiat quasi aliquam dicta earum, suscipit voluptatem.
+            </p>
+
+            <p>Johnathan Lee</p>
+            <p>Red Bolt</p>
+          </div>
+
+          <div class="card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestias explicabo libero eligendi nesciunt quisquam, quia cum quos!
+            </p>
+
+            <p>David Wilson</p>
+            <p>Slide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- FAQ -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="faq-title text-center pb-3">
+                <h2>FAQ</h2>
+              </div>
+            </div>
+                            <div class="col-md-6 offset-md-3">
+                                <div class="faq" id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-1">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                                    <span class="badge">1</span>What is Lorem Ipsum?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-2">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                                    <span class="badge">2</span> Where does it come from?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-3">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                                    <span class="badge">3</span>Why do we use it?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-4">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                                    <span class="badge">4</span> Where can I get some?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-5">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                                    <span class="badge">5</span> What is Lorem Ipsum?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-6">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                                    <span class="badge">6</span> Where does it come from?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-7">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                                                    <span class="badge">7</span> Why do we use it?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        </section>
+  
+      <!-- Footer -->
+      <footer class="footer bg-black">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <div class="card">
+                <h4>Subscribe to Newsletter</h4>
+                <p class="text-sm">
+                  Subscribe now to receive the latest news on breast cancer.
+                </p>
+                <form>
+                  <input type="email" id="email" placeholder="Enter your email" />
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div>
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Process</a></li>
+                <li><a href="#">Join Our Team</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Recent Projects</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <li>
+                  <a href="#">pratyushagarwawl6@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="js/main.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginButton = document.getElementById("loginButton");
+            if (loginButton) {
+                loginButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    window.location.href = "http://127.0.0.1:5500/login/log.html";
+                });
+            } else {
+                console.error("Login button element not found");
+            }
+        });
+    </script>
+    </body>
+  </html>
